@@ -75,4 +75,10 @@ public class Owner extends Person {
         return null;
     }
 
+    public Owner addPet(Pet pet){
+        pet.setOwner(this);
+        this.pets.add(pet);
+        return this;
+    }
+
 }
